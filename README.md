@@ -1,7 +1,3 @@
-# Teen-Smartphone-Usage-and-Addiction-Impact
-Analyzed Kaggle’s Teen Phone Addiction dataset (3,000 teens, 42 features) to explore links between smartphone habits, academic performance, and mental health. Applied clustering, correlation, and regression in Python to uncover usage patterns and provide actionable insights for healthier tech habits.
-
-
 
 # Teen Phone Addiction Analysis
 
@@ -53,3 +49,32 @@ Analyzed Kaggle’s **Teen Phone Addiction** dataset to explore how smartphone h
 - **Educational use** boosts academics but may increase **anxiety** (pressure/overload).
 
 ---
+
+## 🛠️ How to Run
+> The analysis was originally performed in **Google Colab**. You can run locally or in Colab.
+
+### Option A: Google Colab
+1. Open Colab and upload the notebook(s) from `notebooks/`.
+2. Mount or upload the Kaggle CSV.
+3. Run all cells.
+
+### Option B: Local (Python 3.10+)
+```bash
+# (Optional) create a virtual environment
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# install dependencies
+pip install -r requirements.txt
+
+# run a script/notebook
+python src/preprocess.py
+python src/cluster_analysis.py
+python src/correlation_tests.py
+python src/regression_models.py
+```
+
+**Dependencies (typical):** `pandas`, `numpy`, `scikit-learn`, `scipy`, `statsmodels`, `matplotlib`, `seaborn`, `openpyxl`.
+
+---
+
